@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/tools.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <header class="header">  
+            <div class="logo">
+                MotorSeal      
+            </div>
+                <div class="menu">
+                        <div class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="./pages/about.html" class="menu__link">Пошук</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="./pages/authorization.html" class="menu__link">Авторизація</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="./pages/articles.html" class="menu__link">Реєстрація</a>
+                        </div>
+                </div>
+                <div class="authorization">
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <fieldset>
+                            <legend><b>Aвторизация:</b></legend>
+                                <br>
+                            <p>
+                                <input type="text" name="username" required="required"  placeholder="Login">
+                            </p>
+                                <br>
+                            <p>
+                                <input type="password" name="pwd" required="required" placeholder="Password">
+                            </p>
+                        </fieldset>
+                        Запам'ятати пароль?
+                        <input type="checkbox" checked="checked" name="Password_save"> 
+                        <p>
+                            <br>
+                            <input class="authorization__button" type="submit" value="Авторизація">
+                        </p>
+                    </Form>
+                </div>
+        </header>
+        <main>
+            <div class="searching">
+                <h1 class="hero__title">Знайди своє авто...</h1>
+                <form class="searching__form" method="POST" action="https://fom.in.ua/echo" >
+                    <div class="searching__wr">
+                        <div class="searching__wrap">
+                            <div class="searchin__items">
+                                    <fieldset>
+                                        <legend class="legend__title">Марка авто:</legend>
+                                        <p class="optiona">
+                                            <select name="select1">
+                                                <option value="Mercedes">Mercedes-Benz</option>
+                                                <option value="Honda">Honda</option>
+                                                <option value="Subaru">Subaru</option>
+                                                <option value="Toyota">Toyota</option>
+                                                <option value="Porsche">Porsche</option>
+                                                <option value="VolksWage">VolksWagen</option>
+                                                <option value="Opel">Opel</option>
+                                                <option value="BMW">Bayerische Motoren Werke</option> 
+                                            </select>
+                                        </p>
+                                    </fieldset>
+                            </div>
+                        </div>
+                        <div class="searching__wrap">
+                            <div class="searchin__items">  
+                                <fieldset>
+                                    <legend class="legend__title">Комплектація:</legend>
+                                    <p class="optiona">
+                                        <select name="select1">
+                                            <option value="Driv">Драйв</option>
+                                            <option value="Sport">Спорт</option>
+                                            <option value="Stdrt">Сандарт</option>
+                                            <option value="Bis">Бізнес</option>
+                                            <option value="Atk">Ательє</option>
+                                        </select>
+                                    </p>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="button__searchin" value="пошук">Пошук</button>
+                </form>
+            </div>
+            <div class="products-wrap">
+                <div class="product">
+                    <a href="./images/2.jpg" target="_blank">
+                        <img src="images/1.jpeg" alt="1" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2016
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        88 888 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        •Купе •3дверей •5місць •Пробіг 89тис.км •Двигун 5.46л(557к.с./410 кВт) •Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/траса8/ змішаний 10.3 •Коробка передач Автомат •Привід Повний •Колір Сірий металік
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Авто в ідеальному стані як зовнішньо так і технічно! Тюнінг BRABUS (2021рік) На всю Європу тільки один аналог з таким тюнінгом за 100К€ ********** жодної реклами з продажу авто не пропонувати! Жодним площадкам з допомогою авто не телефонувати!!! Тільки конкретні і зацікавлені звінки! Всім вдалих продажів і покупок!
+                    </p>
+                    
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+                <div class="product">
+                    <a href="./images/2.jpg" target="_blank">
+                    <img src="images/2.jpg" alt="2" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2018
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        64 999 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        •5дверей •5місць •Пробіг 120тис.км •Двигун 2.9л.(286 к.с./210кВт)  •Дизель Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/траса 8/змішаний 10.3 •Коробка передач Автомат •Привід Повний •Колір Чорний
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Авто в ідеальному стані, дуже гарній комплектації. За більш детальною інформацію телефонуйте.
+                    </p>
+                    
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+                <div class="product">
+                    <a href="./images/3.jpg" target="_blank">
+                    <img src="images/3.jpg" alt="3" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2018
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        75 499 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        •5дверей •5місць •Пробіг 89 тис.км •Двигун 4л(612к.с./450 кВт) •Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/траса8/змішаний 10.3 •Коробка передач Автомат •Привід Повний •Колір Чорний
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Mercedes-AMG S 63 4MATIC+ Рік: 2018 Пробіг: 121 тис. км Двигун: 4.0 / 450 кВт / 612 к.с. Коробка: автомат Паливо: бензин Привід: повний Статус авто: комісія Дерджавна реєстрація Захищене бронеплівкою Повністю обслужене Офіційне авто Пробіг оригінал Без ДТП та без підфарбувань Всі сервіси є в книжці.
+                    </p>
+                    
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+                <div class="product">
+                    <a href="./images/4.jpg" target="_blank">
+                    <img src="images/4.jpg" alt="4" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2023
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        150 000 $                         
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        •5дверей •5місць •Пробіг 22тис.км • Двигун 2.9л(448.8к.с./330кВт) •Дизель Екостандарт Євро-6 •Коробка передач Автомат •Привід Повний •Колір Білий
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Офіційний автомобіль. Купувався новим за 178 €. Стан нового авто . Передня частина в бронеплівці. 2023 рік випуску. Комплектація: Проекція на лобове скло Стеля алькантара Диски R21 Digital Light Доводчики дверей Підрулююча задня вісь Масаж сидінь Пам?ять сидінь Та багато іншого. Машина варта уваги .Одна на всю Україну в інтернеті .
+                    </p>
+                    
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+                <div class="product">
+                    <a href="./images/5.jpg" target="_blank">
+                             <img src="images/5.jpg" alt="5" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz GLE-Class 2023
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        129 500 $                         
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        •5 дверей • 5 місць • Пробіг 89 тис. км • Двигун 3 л(435к.с./320кВт) •Бензин Екостандарт Євро-6 Гібрід Електро або бензин •Коробка передач Автомат • Привід Повний •Колір Білий
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Офіційний MERCEDES BENZ GLE COPE 53 AMG 3.0 бензин.Стан нового авто! ГАРАНТІЯ! 2 комплекти гуми!
+                    </p>
+                   
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+
+                <div class="product">
+                    <a href="./images/6.jpg" target="_blank">
+                    <img src="images/6.jpg" alt="6" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2016
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        88 888 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        Купе • 3 дверей • 5 місць • Пробіг 89 тис. км • Двигун 5.46 л (557 к.с. / 410 кВт) • Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/ траса 8 / змішаний 10.3 • Коробка передач Автомат • Привід Повний • Колір Сірий металік
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Авто в ідеальному стані як зовнішньо так і технічно! Тюнінг BRABUS (2021рік) На всю Європу тільки один аналог з таким тюнінгом за 100К€ ********** жодної реклами з продажу авто не пропонувати! Жодним площадкам з допомогою авто не телефонувати!!! Тільки конкретні і зацікавлені звінки! Всім вдалих продажів і покупок!
+                    </p>
+            
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+
+                <div class="product">
+                    <a href="./images/7.jpg" target="_blank">
+                    <img src="images/7.jpg" alt="7" class="product__image">
+                    </a>
+                    <Div>
+                        <p class="product__item">
+                            Mercedes-Benz S-Class 2016
+                        </p>
+                        <br>
+                        <p class="product__price">
+                            88 888 $                          
+                        </p>
+                        <br>
+                        <p class="product__code">
+                            Купе • 3 дверей • 5 місць • Пробіг 89 тис. км • Двигун 5.46 л (557 к.с. / 410 кВт) • Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/ траса 8 / змішаний 10.3 • Коробка передач Автомат • Привід Повний • Колір Сірий металік
+                        </p>
+                        <br>
+                        <p class="product__description">
+                            Авто в ідеальному стані як зовнішньо так і технічно! Тюнінг BRABUS (2021рік) На всю Європу тільки один аналог з таким тюнінгом за 100К€ ********** жодної реклами з продажу авто не пропонувати! Жодним площадкам з допомогою авто не телефонувати!!! Тільки конкретні і зацікавлені звінки! Всім вдалих продажів і покупок!
+                        </p>
+                    </Div>
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+
+                <div class="product">
+                    <a href="./images/9.jpg" target="_blank">
+                    <img src="images/9.jpg" alt="9" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2016
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        88 888 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        Купе • 3 дверей • 5 місць • Пробіг 89 тис. км • Двигун 5.46 л (557 к.с. / 410 кВт) • Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/ траса 8 / змішаний 10.3 • Коробка передач Автомат • Привід Повний • Колір Сірий металік
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Авто в ідеальному стані як зовнішньо так і технічно! Тюнінг BRABUS (2021рік) На всю Європу тільки один аналог з таким тюнінгом за 100К€ ********** жодної реклами з продажу авто не пропонувати! Жодним площадкам з допомогою авто не телефонувати!!! Тільки конкретні і зацікавлені звінки! Всім вдалих продажів і покупок!
+                    </p>
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+
+                <div class="product">
+                    <a href="./images/10.jpg" target="_blank">
+                    <img src="images/10.jpg" alt="10" class="product__image">
+                    </a>
+                    <p class="product__item">
+                        Mercedes-Benz S-Class 2016
+                    </p>
+                    <br>
+                    <p class="product__price">
+                        88 888 $                          
+                    </p>
+                    <br>
+                    <p class="product__code">
+                        Купе • 3 дверей • 5 місць • Пробіг 89 тис. км • Двигун 5.46 л (557 к.с. / 410 кВт) • Бензин Екостандарт Євро-6 Витрати пального (л/100 км) місто 14.3/ траса 8 / змішаний 10.3 • Коробка передач Автомат • Привід Повний • Колір Сірий металік
+                    </p>
+                    <br>
+                    <p class="product__description">
+                        Авто в ідеальному стані як зовнішньо так і технічно! Тюнінг BRABUS (2021рік) На всю Європу тільки один аналог з таким тюнінгом за 100К€ ********** жодної реклами з продажу авто не пропонувати! Жодним площадкам з допомогою авто не телефонувати!!! Тільки конкретні і зацікавлені звінки! Всім вдалих продажів і покупок!
+                    </p>
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <input type="submit" class="button_bay" value="ПРИДБАТИ">
+                    </Form>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <p class="footer__copyright">&copy; 2024 Invader ZIM. All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tools.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <header class="header">  
+            <div class="logo">
+                MotorSeal      
+            </div>
+                <div class="menu">
+                        <div class="menu__item">
+                            <a href="../index.html" class="menu__link">Каталог</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="../pages/about.html" class="menu__link">Пошук</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="../pages/authorization.html" class="menu__link">Авторизація</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#" class="menu__link">Реєстрація</a>
+                        </div>
+                </div>
+                <div class="authorization">
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <fieldset>
+                            <legend><b>Aвторизация:</b></legend>
+                                <br>
+                            <p>
+                                <input type="text" name="username" required="required"  placeholder="Login">
+                            </p>
+                                <br>
+                            <p>
+                                <input type="password" name="pwd" required="required" placeholder="Password">
+                            </p>
+                        </fieldset>
+                        Запам'ятати пароль?
+                        <input type="checkbox" checked="checked" name="Password_save"> 
+                        <p>
+                            <br>
+                            <input class="authorization__button" type="submit" value="Авторизація">
+                        </p>
+                    </Form>
+                </div>
+        </header>
+        <main>
+            <div class="searching">
+                <h1 class="hero__title">Реєстрація...</h1>
+                <form class="searching__form" method="POST" action="https://fom.in.ua/echo" >
+                    <div class="searching__wr">
+                        <div class="searching__wrap">
+                            <div class="searchin__items">
+                                    <fieldset>
+                                        <legend class="legend__title">Пол:</legend>
+                                        <p class="optiona">
+                                                Жіночий<input type="radio" checked="checked" name="sedan">
+                                                <br>
+                                                Чоловічий<input type="radio" name="wagon">
+                                                <br>
+                                        </p>
+                                    </fieldset>
+                                    <br>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">ПІБ</legend>
+                                    <p class="optiona">
+                                            <input type="text" name="last_name" placeholder="Прізвище">
+                                            <input type="text" name="name" placeholder="Ім'я">
+                                            <input type="text" name="father_name" placeholder="По-батькове">
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Країна прописки:</legend>
+                                    <p class="optiona">
+                                        <select name="select1">
+                                            <option value="value1">Німеччина</option>
+                                            <option value="value2">Японія</option>
+                                            <option value="value3">Китай</option>
+                                            <option value="value4">Корея</option>
+                                            <option value="value5">Франція</option>
+                                            <option value="value6">Все таки Німечина</option>
+                                        </select>
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Дата народження</legend>
+                                    <p  class="optiona">
+                                        <input type="date" name="date" min="1900-01-01" max="2024-01-01" >
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Номер телефону:</legend>
+                                    <p  class="optiona">
+                                        <input type="tel" name="phone" pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" title="+38 (063) 223-23-23">
+                                    </p>
+                                </fieldset>
+                            </div>
+                        </div>    
+                    </div>
+                    <p  class="optiona">
+                        <button type="submit" class="button__searchin" value="реєстрація">Реєстрація</button>
+                    </p>
+                </form> 
+            </div>
+        </main>
+        <div class="footer">
+            <p class="footer__copyright">&copy; 2024 Invader ZIM. All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

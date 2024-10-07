@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tools.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/reset.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <header class="header">  
+            <div class="logo">
+                MotorSeal      
+            </div>
+                <div class="menu">
+                        <div class="menu__item">
+                            <a href="../index.html" class="menu__link">Каталог</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="#" class="menu__link">Пошук</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="../pages/authorization.html" class="menu__link">Авторизація</a>
+                        </div>
+                        <div class="menu__item">
+                            <a href="../pages/articles.html" class="menu__link">Реєстрація</a>
+                        </div>
+                </div>
+                <div class="authorization">
+                    <Form method="POST" action="https://fom.in.ua/echo">
+                        <fieldset>
+                            <legend><b>Aвторизация:</b></legend>
+                                <br>
+                            <p>
+                                <input type="text" name="username" required="required"  placeholder="Login">
+                            </p>
+                                <br>
+                            <p>
+                                <input type="password" name="pwd" required="required" placeholder="Password">Porsche
+                            </p>
+                        </fieldset>
+                        Запам'ятати пароль?
+                        <input type="checkbox" checked="checked" name="Password_save"> 
+                        <p>
+                            <br>
+                            <input class="authorization__button" type="submit" value="Авторизація">
+                        </p>
+                    </Form>
+                </div>
+        </header>
+        <main>
+            <div class="searching">
+                    <h1 class="hero__title">Знайди своє авто...</h1>
+                <form class="searching__form" method="POST" action="https://fom.in.ua/echo" >
+                    <div class="searching__wr">
+                        <div class="searching__wrap">
+                            <div class="searchin__items">
+                                    <fieldset>
+                                        <legend class="legend__title">Оберіть кузов:</legend>
+                                        <p class="optiona">
+                                                Сідан<input type="radio" checked="checked" name="sedan">
+                                                <br>
+                                                Універсал<input type="radio" name="wagon">
+                                                <br>
+                                                Хетчбэк<input type="radio" name="Hatchback">
+                                                <br>
+                                                Ліфтбек<input type="radio" name="Liftback">
+                                                <br>
+                                                Купе<input type="radio" name="Compartment">
+                                                <br>
+                                                Кабріолет<input type="radio" name="Cabriolet">
+                                        </p>
+                                    </fieldset>
+                                    <br>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Марка авто:</legend>
+                                    <p class="optiona">
+                                        <select name="select1">
+                                            <option value="Mercedes">Mercedes-Benz</option>
+                                            <option value="Honda">Honda</option>
+                                            <option value="Subaru">Subaru</option>
+                                            <option value="Toyota">Toyota</option>
+                                            <option value="Porsche">Porsche</option>
+                                            <option value="VolksWage">VolksWagen</option>
+                                            <option value="Opel">Opel</option>
+                                            <option value="BMW">Bayerische Motoren Werke</option>
+                                        </select>
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Країна виробника:</legend>
+                                    <p class="optiona">
+                                        <select name="select1">
+                                            <option value="value1">Німеччина</option>
+                                            <option value="value2">Японія</option>
+                                            <option value="value3">Китай</option>
+                                            <option value="value4">Корея</option>
+                                            <option value="value5">Франція</option>
+                                            <option value="value6">Все таки Німечина</option>
+                                        </select>
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Ціна:</legend>
+                                    <p  class="optiona">
+                                        Манімальна:<input type="text" name="donation__min" list="donations__min">
+                                            <datalist id="donations__min">
+                                                <option value="10.000$"></option>
+                                                <option value="15.000$"></option>
+                                                <option value="20.000$"></option>
+                                                <option value="25.000$"></option>
+                                            </datalist>
+                                        <br>
+                                        Максимальна:<input type="text" name="donation__max" list="donations__max">
+                                            <datalist id="donations__max">
+                                                <option value="40.000$"></option>
+                                                <option value="50.000$"></option>
+                                                <option value="60.000$"></option>
+                                                <option value="70.000$"></option>
+                                            </datalist>
+                                        </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Рік випуску</legend>
+                                    <p  class="optiona">
+                                        Від
+                                        <input type="number" name="min__year" min="1999" max="2024" step="1">
+                                        до
+                                        <input type="number" name="max__year" min="1999" max="2024" step="1">
+                                    </p>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="searching__wrap">
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Стан:</legend>
+                                    <p class="optiona">
+                                        Газ<input type="checkbox" checked="checked" name="gas">
+                                        <br>
+                                        Бензин<input type="checkbox" checked="checked" name="gasoline">
+                                        <br>
+                                        Електро<input type="checkbox" checked="checked" name="volt">
+                                        <br>
+                                        Дизель<input type="checkbox" checked="checked" name="diesel">
+                                            
+                                    </p>
+                                </fieldset>
+                                <br>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                    <legend class="legend__title">Тип палива:</legend>
+                                    <p class="optiona"> 
+                                        Б\У<input type="checkbox" checked="checked" name="used">
+                                        <br>
+                                        Нова<input type="checkbox" checked="checked" name="new">
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">  
+                                <fieldset>
+                                    <legend class="legend__title">Тип коробки передач:</legend>
+                                        <p class="optiona">
+                                                Ручна<input type="checkbox" checked="checked" name="meh">
+                                                Автомат<input type="checkbox" checked="checked" name="avto">
+                                                <br>
+                                                Робот<input type="checkbox" checked="checked" name="robot">
+                                                Варіатор<input type="checkbox" checked="checked" name="variator">
+                                        </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">
+                                <fieldset>
+                                <legend class="legend__title">Колір:</legend>
+                                    <p class="optiona">
+                                            <input type="color" name="fg">
+                                    </p>
+                                </fieldset>
+                            </div>
+                            <div class="searchin__items">  
+                                <fieldset>
+                                    <legend class="legend__title">Комплектація:</legend>
+                                    <p class="optiona">
+                                        <select name="select1">
+                                            <option value="Driv">Драйв</option>
+                                            <option value="Sport">Спорт</option>
+                                            <option value="Stdrt">Сандарт</option>
+                                            <option value="Bis">Бізнес</option>
+                                            <option value="Atk">Ательє</option>
+                                        </select>
+                                    </p>
+                                </fieldset>
+                            </div>
+                        </div>    
+                    </div>
+                <p  class="optiona">
+                    <button type="submit" class="button__searchin" value="пошук">Пошук</button>
+                </p>
+                </form> 
+            </div>
+        </main>
+        <div class="footer">
+            <p class="footer__copyright">&copy; 2024 Invader ZIM. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
